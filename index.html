@@ -1,0 +1,51 @@
+<!--
+    Created by: Nigel Diaz
+    Created on: July 1, 2022
+    Last updated on: July 1, 2022
+-->
+<html lang="en">
+    <head>
+        <meta content="en-us" http-equiv="Content-Language">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Palindrome Checker</title>
+        <meta name="keywords" content="Nigel Diaz, palindrome checker">
+        <meta name="description" content="This is a web app that allows you to check if a word or sentence is a palindrome.">
+        <meta name="viewport" content="width=device-width, initial-scale=0.85">
+        <link href="assets/css/index-styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Palindrome Checker</h1>
+        </div>
+        <div class="main">
+            <div class="checker">
+                <p>
+                    A palindrome is a word or sentence that's spelled the same way both forward and backward, 
+                    ignoring punctuation, case, and spacing.
+                </p>
+                <p>Some examples are "eye", "race car", and "Was it a rat I saw?"</p>
+                <p><strong>Enter a word or sentence below to check if it's a palindrome:</strong></p>
+                <input type="text" id="txtInput" name="txtInput">
+                <span><Strong id="message" name="message"></Strong></span>
+            </div>
+            <div>
+                <button type="button" id="btnCheck" name="btnCheck">Check</button>
+                <button type="button" id="btnClear" name="btnClear">Clear</button> 
+                <br/><br/>
+            </div>                 
+        </div>
+        <div class="history">
+            <strong>History&nbsp;&nbsp;</strong>
+            <button type="button" id="btnClearHistory" name="btnClearHistory">Clear History</button> 
+            <table id="historyTable">
+                <tr>
+                    <th>Word/Sentence</th>
+                    <th>Result</th>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        
+    </body>
+    <script src="assets/js/palindrome-checker.js"></script>
+</html>
